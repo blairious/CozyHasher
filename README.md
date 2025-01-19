@@ -31,14 +31,14 @@ To use the hasher, instanciate the class and use the following methods as needed
 ```C#
 String HashVal = hasherinst.MakeHash(username, password);
 ```
-MakeHash takes in two strings and returns a hash as a single string output. Keep in mind that the algorithm dynamically keys when it creates a class, making the output potential different on each use, despite the inputs being the same. For this reason, you cannot use this method to check validity.
+MakeHash() takes in two strings and returns a hash as a single string output. Keep in mind that the algorithm dynamically keys when it creates a class, making the output potential different on each use, despite the inputs being the same. For this reason, you cannot use this method to check validity.
 
 To check if a username, password, and hash are valid use:
 
 ```C#
 bool ValidationVar = hasherinst.CheckHash(Username, Password, KnownHash);
 ```
-Check hash will take the user inputs(Username, Password) and the known hash for the given user(KnownHash), all as strings, and will return a True value if the username and password match the hash, and a False value if they do not.
+CheckHash() will take the user inputs(Username, Password) and the known hash for the given user(KnownHash), all as strings, and will return a True value if the username and password match the hash, and a False value if they do not.
 
 ## Testing
 
