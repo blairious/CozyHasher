@@ -6,6 +6,40 @@ A simple password hashing DLL that accepts a username and password, and generate
 
 Blair Palmerlee
 
+## Adding to Project
+
+You can add the nuget package manually from Github or by typing:
+
+```
+dotnet add package CozyHasher --version 1.1.1
+```
+
+in your CLI.
+
+Please note that the most current version is 1.1.1 and using any older versions is not recommended. 
+
+## Using CozyHasher
+
+Once the DLL has been added to your chosen project, add:
+
+```C#
+using CozyHasher;
+```
+
+To use the hasher, instanciate the class and use the following methods as needed:
+
+```C#
+String HashVal = hasherinst.MakeHash(username, password);
+```
+MakeHash takes in two strings and returns a hash as a single string output. Keep in mind that the algorithm dynamically keys when it creates a class, making the output potential different on each use, despite the inputs being the same. For this reason, you cannot use this method to check validity.
+
+To check if a username, password, and hash are valid use:
+
+```C#
+bool ValidationVar = hasherinst.CheckHash(Username, Password, KnownHash);
+```
+Check hash will take the user inputs(Username, Password) and the known hash for the given user(KnownHash), all as strings, and will return a True value if the username and password match the hash, and a False value if they do not.
+
 ## Testing
 
 While not strictly necessary, it is highly recommended that the release be tested before implimentation. Runnting the following test code should return "Check Hash Status: True" if the version is authentic.
