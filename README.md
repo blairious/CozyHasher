@@ -55,4 +55,4 @@ Console.WriteLine($"Check hash status: {Validation}");
 ```
 ## Version Notes
 
-1.2.2 fixes a critical calculation error that occured while forming hashes in specific test cases. For the safety and integrity of associated projects, it is recommended that earlier versions not be used in projects. 
+1.2.2 fixes a critical calculation error that occured while forming hashes in specific test cases. For the safety and integrity of associated projects, it is recommended that earlier versions not be used. 
