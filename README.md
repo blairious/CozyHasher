@@ -16,7 +16,7 @@ dotnet add package CozyHasher --version 1.1.2
 
 in your CLI.
 
-Please note that the most current version is 1.1.1 and using any older versions is not recommended. 
+Please note that the most current version is 1.1.2 and using any older versions is not recommended. 
 
 ## Using CozyHasher
 
