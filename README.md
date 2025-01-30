@@ -11,7 +11,7 @@ Blair Palmerlee
 You can add the nuget package manually from Github or by typing:
 
 ```
-dotnet add package CozyHasher --version 1.1.3
+No version currently available
 ```
 
 in your CLI.
