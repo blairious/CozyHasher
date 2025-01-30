@@ -42,7 +42,7 @@ CheckHash() will take the user inputs(Username, Password) and the known hash for
 
 ## Testing
 
-While not strictly necessary, it is highly recommended that the release be tested before implimentation. Runnting the following test code should return "Check Hash Status: True" if the version is authentic.
+While not strictly necessary, it is highly recommended that the release be tested before implimentation. Runnting the following test code should return "Check hash status: True" if the version is authentic.
 
 ```C#
 using CozyHasher;
