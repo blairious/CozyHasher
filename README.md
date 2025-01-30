@@ -48,7 +48,7 @@ While not strictly necessary, it is highly recommended that the release be teste
 using CozyHasher;
 
 Hasher hasher = new Hasher();
-bool Validation = hasher.CheckHash("Validate", "Validate!:", "E1AB510BJHGGFEHDAC413CJB020CIECCA3DF5CGECAB510BJHGGFEHDAC413CJB0");
+bool Validation = hasher.CheckHash("Validate", "Validate!:", "11BAC3CBBB10EA3BC1BBEC410DA2233123AGE6112FHB211EECAB510BJHGGFEHE");
 
 Console.WriteLine($"Check hash status: {Validation}");
 
