@@ -1,6 +1,6 @@
 # CozyHasher v1.3.0
 
-A simple password hashing DLL that accepts a username and password, and generates a 512 bit key for storage. It also has a method for built-in comparison. 
+A simple password hashing DLL that accepts a username and password, and generates a 512 bit key for storage. It also has a method for built-in comparison. This tool was built for use in C# projects. 
 
 ### Created By
 
