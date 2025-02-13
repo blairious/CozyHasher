@@ -40,6 +40,8 @@ bool ValidationVar = hasherinst.CheckHash(Username, Password, KnownHash);
 ```
 CheckHash() will take the user inputs(Username, Password) and the known hash for the given user(KnownHash), all as strings, and will return a True value if the username and password match the hash, and a False value if they do not.
 
+As a note: Make sure to always store resulting string in a variable. The final hash may include escape characters. 
+
 ## Testing
 
 While not strictly necessary, it is highly recommended that the release be tested before implimentation. Runnting the following test code should return "Check hash status: True" if the version is the most recent release.
@@ -48,7 +50,7 @@ While not strictly necessary, it is highly recommended that the release be teste
 using CozyHasher;
 
 Hasher hasher = new Hasher();
-bool Validation = hasher.CheckHash("Validate", "Validate!:", "10[1Q51WS)1VOf21/Ye10BG10?*'g0Z02%X\200@20J311G164#CQ1MU>#<069Yg");
+bool Validation = hasher.CheckHash("Validate", "Validate!:", "11[1S*&[1[10U?(0e1I.LJ310BH2!+)1!(0`LG11#DaR211LLJ67=100laWWVLOg");
 
 Console.WriteLine($"Check hash status: {Validation}");
 
