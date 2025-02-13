@@ -1,4 +1,4 @@
-# CozyHasher v1.3.0
+# CozyHasher v1.3.2
 
 A simple password hashing DLL that accepts a username and password, and generates a 512 bit key for storage. It also has a method for built-in comparison. This tool was built for use in C# projects. 
 
@@ -11,12 +11,12 @@ Blair Palmerlee
 You can add the nuget package manually from Github or by typing:
 
 ```
-dotnet add package CozyHasher --version 1.3.0
+dotnet add package CozyHasher --version 1.3.2
 ```
 
 in your CLI.
 
-Please note that the most current version is 1.3.0 and using any older versions is not recommended. 
+Please note that the most current version is 1.3.2 and using any older versions is not recommended. 
 
 ## Using CozyHasher
 
@@ -48,11 +48,11 @@ While not strictly necessary, it is highly recommended that the release be teste
 using CozyHasher;
 
 Hasher hasher = new Hasher();
-bool Validation = hasher.CheckHash("Validate", "Validate!:", ":AB>AAFB8ACHA@BACFA@A?>:>?:;DI@??;?AA?BC@DE?<<;@@BJHDEDBCADEDD?<");
+bool Validation = hasher.CheckHash("Validate", "Validate!:", "10[1Q51WS)1VOf21/Ye10BG10?*'g0Z02%X\200@20J311G164#CQ1MU>#<069Yg");
 
 Console.WriteLine($"Check hash status: {Validation}");
 
 ```
 ## Version Notes
 
-1.3.0 Expands the ascii character range that is used for greater obsurity in the produced hash. 
+1.3.2 Expands the ascii character range that is used for greater obsurity in the produced hash. 
