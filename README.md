@@ -40,7 +40,7 @@ bool ValidationVar = hasherinst.CheckHash(Username, Password, KnownHash);
 ```
 CheckHash() will take the user inputs(Username, Password) and the known hash for the given user(KnownHash), all as strings, and will return a True value if the username and password match the hash, and a False value if they do not.
 
-As a note: Make sure to always store resulting string in a variable. The final hash may include escape characters. 
+As a note: Make sure to always store the resulting string in a variable. The final hash may include escape characters. 
 
 ## Testing
 
