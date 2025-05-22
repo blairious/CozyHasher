@@ -1,4 +1,4 @@
-# CozyHasher v2.0.1
+# CozyHasher v2.0.2
 
 A simple password hashing DLL that accepts a username and password, and generates a 256 byte key for safe storage. It also has a method for built-in comparison. This tool was built for use in C# projects. 
 
@@ -11,7 +11,7 @@ Blair Palmerlee
 You can add the nuget package manually from Github or by typing:
 
 ```
-dotnet add package CozyHasher --version 2.0.1
+dotnet add package CozyHasher --version 2.0.2
 ```
 
 in your CLI.
@@ -40,9 +40,9 @@ CheckHash(string Username, byte[] Password, string KnownHash) will take the user
 
 ### Summary: 
 
-2.0.1 Fixes:
+2.0.2 Fixes:
 
-* A known error which caused patterning has been fixed. 
-* Additional password data protection in at a memory level has been added.
+* Additional steps have been taken to protect password data in memory.
+* Testing has continued on the newest version. Stability testing passed on 100,000 hash creation and check sequences. 
 
 2.0.0 has huge improvements over previous versions. Beyond hashing to a larger size, the algorithm has become more advanced and far more obscure. While former versions could generate several hashes from the same user data, CozyHasher can now produce and reliably check enormous numbers of unique hashes from the same username and password. The data written to memory is now treated much more carefully, in the form of arrays with active garbage collection and clearing of data as it's used.
